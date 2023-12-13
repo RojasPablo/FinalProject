@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adoption Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="adoption.css" />
+</head>
+
+<body>
+    <!-- TODO -->
+    <div class="container">
+        <h1>Adoption Form</h1>
+        <div id="maintenance-notice" class="bg-warning py-3">
+            <div class="container">
+                <h2>Thank you for your interest in adoption!</h2>
+                <p>Before catching your first Pokemon please consider the following:<br><br>
+                    BULBASAUR: Needs plenty of sun and should be avoided if you are sensitive to allergies!<br><br>
+                    SQUIRTLE: Needs frequent visits to the beach! Be wary of his association with the Squirtle
+                    Squad!<br><br>
+                    CHARMANDER: Loves to nap, but be prepared to put out "accidental" fires on a regular basis!<br><br>
+                    PIKACHU: Has regular mood swings, but provides unconditional love and companionship!
+                </p>
+            </div>
+        </div>
+        <form id="adoption-form" action="">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input id="first-name" class="form-control validate-input" type="text" name="first-name"
+                    placeholder="Ash" />
+                <small class="error" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input id="last-name" class="form-control validate-input" type="text" name="last-name"
+                    placeholder="Ketchum" />
+                <small class="error" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" class="form-control validate-input" type="email" name="email"
+                    placeholder="AshKetchum150@KantoRegion.com" />
+                <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="form-group">
+                <label for="adoption-kind">What can I help you with?</label>
+                <select class="form-control" name="kind" id="adoption-kind">
+                    <option value="choose" selected="selected" disabled>
+                        Choose one
+                    </option>
+                    <option value="volunteer">Volunteer at the Pokemon Center</option>
+                    <option value="adopt">Catch Your first Pokemon Today</option>
+                </select>
+                <small class="error" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group hidden" id="volunteer-field">
+                <label for="past-volunteer-work">How can you assist nurse Joy</label>
+                <textarea id="past-volunteer-work" class="form-control validate-input" name="message" rows="4"
+                    placeholder="Medical Experience Here: "></textarea>
+                <small class="error" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group hidden" id="adoption-fields">
+                <label for="pokemon-kind">Select Pokemon</label>
+                <select class="form-control" name="kind" id="pokemon-kind">
+                    <option value="choose" selected="selected" disabled>
+                        Choose one
+                    </option>
+                    <option value="bulbasaur">Bulbasaur</option>
+                    <option value="squirtle">Squirtle</option>
+                    <option value="charmander">Charmander</option>
+                    <option value="pikachu">Pikachu</option>
+                </select>
+                <small class="error" aria-live="polite"></small>
+
+                <label for="message">Please explain why you would make a great trainer:</label>
+                <textarea id="message" class="form-control validate-input" name="message" rows="4"
+                    placeholder="Do you have what it takes to catch them all?"></textarea>
+                <small class="error" aria-live="polite"></small>
+            </div>
+
+
+            <div class="form-group">
+                <input class="btn btn-primary" type="submit" value="submit" />
+            </div>
+        </form>
+    </div>
+
+    <script src="adoption.js"></script>
+</body>
+
+</html>

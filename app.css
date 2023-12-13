@@ -1,0 +1,111 @@
+body {
+    background: linear-gradient(to top, white, rgb(75, 75, 75));
+    margin: 0;
+    color: white;
+}
+.card {
+    list-style: none;
+    padding: 40px;
+    text-align: center;
+    border-radius: 90px;
+    overflow: hidden;
+    width: 330px;
+    height: 200px;
+    transition: transform 0.2s;
+    perspective: 1000px;
+    transition: transform 0.5s;
+}
+.flipped {
+    transform: rotateY(180deg);
+}
+#pokedex {
+    padding-inline-start: 80px;
+    padding-inline-end: 40px;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+
+.card:nth-child(1) {
+    order: 1;
+    /* background-color: rgb(114, 248, 196); */
+    background: linear-gradient(to bottom, rgb(114, 248, 196), green);
+}
+
+.card:nth-child(2) {
+    order: 4;
+    background: linear-gradient(to bottom, rgb(114, 248, 196), green);
+}
+
+.card:nth-child(3) {
+    order: 7;
+    background: linear-gradient(to bottom, rgb(114, 248, 196), green);
+}
+
+.card:nth-child(4) {
+    order: 2;
+    background: linear-gradient(to bottom, lightcoral, rgb(251, 41, 41));
+    
+}
+
+.card:nth-child(5) {
+    order: 5;
+    background: linear-gradient(to bottom, lightcoral, rgb(251, 41, 41));
+}
+
+.card:nth-child(6) {
+    order: 8;
+    background: linear-gradient(to bottom, lightcoral, rgb(251, 41, 41));
+}
+
+.card:nth-child(7) {
+    order: 3;
+    background-color: rgb(123, 248, 248);
+    background: linear-gradient(to bottom,rgb(123, 248, 248), rgb(0, 153, 255));
+}
+
+.card:nth-child(8) {
+    order: 6;
+    background: linear-gradient(to bottom, rgb(123, 248, 248), rgb(0, 153, 255));
+}
+
+.card:nth-child(9) {
+    order: 9;
+    background: linear-gradient(to bottom, rgb(123, 248, 248), rgb(0, 153, 255));
+}
+.card:nth-child(10) {
+    order: 10;
+    background: linear-gradient(to bottom, rgb(227, 251, 131), rgb(255, 183, 0));
+}
+.card-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+.card-subtitle {
+ font-weight: lighter;   
+ margin-top: 5px;
+}
+.card-image {
+    height: 130px;
+}
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+}
+h2 {
+    text-align: center;
+}
+
+.card:hover{
+    transform: scale(1.12);
+    cursor: pointer;
+}
